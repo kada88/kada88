@@ -5,12 +5,6 @@ Welcome to my portfolio. Below, you will find architectural breakdowns of two of
 
 ---
 
-### 💻 Featured Public Code
-**🎬 Chaptr:** A high-performance iOS vertical video paging feed featuring a custom UIKit compositional engine, strict 3-player hardware memory limits, and zero-black-frame transitions. 
-👉 [View the Code Repository](https://github.com/kada88/kada-chaptr) | 🍿 [Watch the Architecture Walkthrough](https://www.loom.com/share/e54f1ee3f9d34706a4ab1e40f71bdf90)
-
----
-
 ## 1. Memoria
 **A Zero-Knowledge, On-Device AI Identity Concierge & Semantic Vault**
 
