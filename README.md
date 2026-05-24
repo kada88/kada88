@@ -1,8 +1,16 @@
 # Hi there 👋, I'm Karthik Damodara
-### Senior iOS Engineer | System Architecture | Premium UX
+**Senior iOS Engineer | Systems Architecture | Premium UX**
 
 Welcome to my portfolio. Below, you will find architectural breakdowns of two of my core private applications. These highlight my approach to complex state management, local AI processing, and building premium, cinematic user interfaces.
+
 ---
+
+### 💻 Featured Public Code
+**🎬 Chaptr:** A high-performance iOS vertical video paging feed featuring a custom UIKit compositional engine, strict 3-player hardware memory limits, and zero-black-frame transitions. 
+👉 [View the Code Repository](https://github.com/kada88/kada-chaptr) | 🍿 [Watch the Architecture Walkthrough](https://www.loom.com/share/e54f1ee3f9d34706a4ab1e40f71bdf90)
+
+---
+
 ## 1. Memoria
 **A Zero-Knowledge, On-Device AI Identity Concierge & Semantic Vault**
 
@@ -41,10 +49,14 @@ Memoria’s interface was explicitly designed to feel like a high-end, impenetra
 | ![Scanner](./screenshots/memoria_scanner.png) | ![Detail View](./screenshots/memoria_detail.png) | ![Assistant](./screenshots/memoria_assistant.png) |
 
 ---
+
 ## 2. ShelfWise
 **AI-Powered Luxury Library Concierge**
+
 A bespoke, AI-powered digital concierge designed for ultra-high-net-worth individuals to seamlessly catalog, organize, and extract deep insights from their private physical book collections.
+
 ![ShelfWise Home Screen](./screenshots/shelfwise_home.png)
+
 ### 🛠 Tech Stack & Architecture
 * **UI Framework:** SwiftUI
 * **Architecture Pattern:** MVVM-C (Model-View-ViewModel-Coordinator)
@@ -52,51 +64,20 @@ A bespoke, AI-powered digital concierge designed for ultra-high-net-worth indivi
 * **Persistence:** CoreData (Programmatic entity mapping)
 * **External Integrations:** OpenAI API (LLM Enrichment), Google Books API, Open Library API
 * **Device Frameworks:** AVFoundation (Barcode Scanning), Vision
+
 ### 🧠 Engineering Highlights
 * **Scalable MVVM-C Architecture in SwiftUI:** Engineered a rigid Model-View-ViewModel-Coordinator architecture to completely decouple navigation logic from the UI layer. This allowed for complex, programmatic modal routing (e.g., smoothly dismissing camera modals while seamlessly pushing to manual search flows) without relying on fragile SwiftUI `NavigationLink` states.
 * **Asynchronous AI Enrichment Pipeline:** Designed a robust background processing queue that listens for new physical book ingestions. It silently passes metadata through an OpenAI integration layer to generate bespoke summaries and personalized reading recommendations without blocking the main UI thread.
 * **Multi-Tiered Fallback API Resolution:** Built a resilient data ingestion service that attempts primary resolution via the Google Books API. If a barcode scan misses or returns incomplete metadata, the service seamlessly cascades to the Open Library API to ensure flawless data integrity for obscure or rare volumes.
 * **Clean Architecture Data Boundaries:** Maintained strict separation of concerns by utilizing Data Transfer Objects (DTOs) for network responses, which are manually mapped to programmatic Core Data entities before being published to the ViewModels via Combine pipelines.
+
 ### ✨ Product & Premium UX
 ShelfWise diverges from standard iOS design paradigms to offer an elite, "stealth luxury" aesthetic inspired by high-end auction catalogs (like Sotheby's).
 * **Ambient Lighting Engine:** Engineered a custom SwiftUI modifier that dynamically extracts the dominant colors of a book cover and casts a blurred, ambient drop-shadow behind it, simulating physical gallery lighting.
 * **Dynamic "Exhibition" Layouts:** Replaced standard lists with bespoke layouts featuring custom typography tracking, heavy negative space, and glassmorphic floating search bars to emulate a private museum exhibition.
 * **Intelligent Loading States:** Eradicated standard loading spinners in favor of contextual "Concierge" messaging (e.g., *"AI is currently analyzing this volume..."*) to maintain immersion during asynchronous network tasks.
-### 📱 Visual Showcase
-|
- The Archive (Main Grid) 
-|
- The Ingestion Flow (Scanner) 
-|
- The Dossier (AI Insights) 
-|
-|
-:---:
-|
-:---:
-|
-:---:
-|
-|
-!
-[
-Archive
-](
-./screenshots/shelfwise_archive.png
-)
-|
-!
-[
-Ingestion
-](
-./screenshots/shelfwise_scanner.png
-)
-|
-!
-[
-Dossier
-](
-./screenshots/shelfwise_dossier.png
-)
-|
 
+### 📱 Visual Showcase
+| The Archive (Main Grid) | The Ingestion Flow (Scanner) | The Dossier (AI Insights) |
+| :---: | :---: | :---: |
+| ![Archive](./screenshots/shelfwise_archive.png) | ![Ingestion](./screenshots/shelfwise_scanner.png) | ![Dossier](./screenshots/shelfwise_dossier.png) |
