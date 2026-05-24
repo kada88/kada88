@@ -55,7 +55,7 @@ Memoria’s interface was explicitly designed to feel like a high-end, impenetra
 
 A bespoke, AI-powered digital concierge designed for ultra-high-net-worth individuals to seamlessly catalog, organize, and extract deep insights from their private physical book collections.
 
-![ShelfWise Home Screen](./screenshots/shelfwise_home.png)
+![ShelfWise Archive](./screenshots/shelfwise_archive.png)
 
 ### 🛠 Tech Stack & Architecture
 * **UI Framework:** SwiftUI
@@ -78,6 +78,6 @@ ShelfWise diverges from standard iOS design paradigms to offer an elite, "stealt
 * **Intelligent Loading States:** Eradicated standard loading spinners in favor of contextual "Concierge" messaging (e.g., *"AI is currently analyzing this volume..."*) to maintain immersion during asynchronous network tasks.
 
 ### 📱 Visual Showcase
-| The Archive (Main Grid) | The Ingestion Flow (Scanner) | The Dossier (AI Insights) |
+| The Archive (Main Grid) | Collection Insights | The Dossier (Book Details) |
 | :---: | :---: | :---: |
-| ![Archive](./screenshots/shelfwise_archive.png) | ![Ingestion](./screenshots/shelfwise_scanner.png) | ![Dossier](./screenshots/shelfwise_dossier.png) |
+| ![Archive](./screenshots/shelfwise_archive.png) | ![Insights](./screenshots/shelfwise_insights.png) | ![Dossier](./screenshots/shelfwise_dossier.png) |
